@@ -1,0 +1,69 @@
+==================================================================
+https://keybase.io/roxasshadow
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://giovannicapuano.net
+  * I am roxasshadow (https://keybase.io/roxasshadow) on keybase.
+  * I have a public key with fingerprint 717C 9563 A34C A92C 4EFF  974A 111F 8DD5 73C3 1D8F
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
+            "fingerprint": "717c9563a34ca92c4eff974a111f8dd573c31d8f",
+            "host": "keybase.io",
+            "key_id": "111f8dd573c31d8f",
+            "kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
+            "uid": "44d827e5ae7c6646aea707c7191c5b19",
+            "username": "roxasshadow"
+        },
+        "service": {
+            "hostname": "giovannicapuano.net",
+            "protocol": "http:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1454191289,
+    "expire_in": 157680000,
+    "prev": "08821fbabed2f7ae15f17c0b96f48afa787459e83ec5b766e97252bb7e786e8b",
+    "seqno": 13,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.49
+Comment: https://keybase.io/crypto
+
+yMIuAnicrZJbSBVBHMaPp5sdLMOHqKDbPlSm5c7eZvbUUzcKi4SwG9FxdnfmnC3d
+3fbsOWp2oaisSHopIgwjRAu7YwZKVGpgVFCQdcxTBAZFd0l9kAyalXrrsXkZZub7
+fvP9/zMPJo0JhDJSp2qfn6mInMp43H4hEdh4VWit4jTbqOTCVdxOMjqRUoPEvchO
+0+DCHA94QEVV0xAlhqEgXYQy1FWdaggoBqJYlBSDGrwkCQpPNaxRhRcxwEBCuiyo
+qgypyGMun6OmFSWu45qWx7AQMIisiMyuY1XQJUKpCiUMAKDIMGQo6iJgeGaM2XHf
+wcJpOE4WmzbbY4vIaLx/6P9z7sQoTpIMJEAiYwJ1RZEUTDDkoQ6BCnRZA6ovjBPX
+wmWEqV27AsfjMWzY5dzefI4dJE2d+L31i/kjipp2EluWqWMngS17sUU8RnFc27N1
+u5QJYp7nhH2/V+n4hnKiRf6gIpppGayhzJAkbty0LS4MmFL3TJ8NJFliyQSk5nOk
+wjFdEjF9hQwVxLPhX0OSfpcQEoBfPTEECjEBMmUPw2uqQiWEKYYISrJKkEhYlVBR
+iAoFWdA0SCBSCNI4v7hdls3YIsuJo4wZN6MW9hIu4fZ23N82NpARCowfF/R/WiA0
+ccrf/xe6kRlofXNzeE+juKM49X3w2XmpN/aux8h78nbW09KCazULinIvNj/81ZIH
+SwqPnZSaB2a0tq2IrGzo7X7ELSm7uoj/UL07rR9xpsL1te3Zzfjgh4Hj8qw1nyqT
+oabD3fV9666nm0gNylt+eT/KW7WyKPjlTF2ssCj1+edtkFid2v1iybml+7vMe8Pq
+gbqqCYNfw/N/HSqedKfz6+asPud9x6vTme112vTzbwrh5CmN3+5O29eTU73pZXFO
+Tdvn3PS87iF5Tn/jvbXntmx5fcvdUH+25VZw4faj/fLsof6SmV1Hrsxdk4XW7att
+GMk+oYwMQfNHcMbWdFb1ss70x0sFwZ6lJ51Qzm+xIUvU
+=OMJR
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/roxasshadow
+
+==================================================================
+
