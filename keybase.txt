@@ -4,60 +4,73 @@ https://keybase.io/roxasshadow
 
 I hereby claim:
 
-  * I am an admin of http://giovannicapuano.net
+  * I am an admin of https://www.giovannicapuano.net
   * I am roxasshadow (https://keybase.io/roxasshadow) on keybase.
   * I have a public key with fingerprint 717C 9563 A34C A92C 4EFF  974A 111F 8DD5 73C3 1D8F
 
 To do so, I am signing this object:
 
 {
-    "body": {
-        "key": {
-            "eldest_kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
-            "fingerprint": "717c9563a34ca92c4eff974a111f8dd573c31d8f",
-            "host": "keybase.io",
-            "key_id": "111f8dd573c31d8f",
-            "kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
-            "uid": "44d827e5ae7c6646aea707c7191c5b19",
-            "username": "roxasshadow"
-        },
-        "service": {
-            "hostname": "giovannicapuano.net",
-            "protocol": "http:"
-        },
-        "type": "web_service_binding",
-        "version": 1
+  "body": {
+    "key": {
+      "eldest_kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
+      "fingerprint": "717c9563a34ca92c4eff974a111f8dd573c31d8f",
+      "host": "keybase.io",
+      "key_id": "111f8dd573c31d8f",
+      "kid": "0101f39bb8fedd68c3757c9cfb816d8fa346dfd044260fbabf603a1a148c529957f30a",
+      "uid": "44d827e5ae7c6646aea707c7191c5b19",
+      "username": "roxasshadow"
     },
-    "ctime": 1454191289,
-    "expire_in": 157680000,
-    "prev": "08821fbabed2f7ae15f17c0b96f48afa787459e83ec5b766e97252bb7e786e8b",
-    "seqno": 13,
-    "tag": "signature"
+    "merkle_root": {
+      "ctime": 1549898599,
+      "hash_meta": "9934f616f694c8b1dde6ad388035a38a13c93fb558ea944b06c5999d4f52f05b",
+      "seqno": 4742737
+    },
+    "revoke": {
+      "sig_ids": [
+        "cd63e0941ef4e04889c8421f238a11e07c134a04df7b04886167047cbf3bf4780f"
+      ]
+    },
+    "service": {
+      "hostname": "www.giovannicapuano.net",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1549898622,
+  "expire_in": 157680000,
+  "prev": "8ea83e3213b4156ab3a8237df271895a97c1b124ec8c4cebe1c4871eb0c63b3b",
+  "seqno": 32,
+  "tag": "signature"
 }
 
 which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v2.0.49
+Version: Keybase OpenPGP v2.0.80
 Comment: https://keybase.io/crypto
 
-yMIuAnicrZJbSBVBHMaPp5sdLMOHqKDbPlSm5c7eZvbUUzcKi4SwG9FxdnfmnC3d
-3fbsOWp2oaisSHopIgwjRAu7YwZKVGpgVFCQdcxTBAZFd0l9kAyalXrrsXkZZub7
-fvP9/zMPJo0JhDJSp2qfn6mInMp43H4hEdh4VWit4jTbqOTCVdxOMjqRUoPEvchO
-0+DCHA94QEVV0xAlhqEgXYQy1FWdaggoBqJYlBSDGrwkCQpPNaxRhRcxwEBCuiyo
-qgypyGMun6OmFSWu45qWx7AQMIisiMyuY1XQJUKpCiUMAKDIMGQo6iJgeGaM2XHf
-wcJpOE4WmzbbY4vIaLx/6P9z7sQoTpIMJEAiYwJ1RZEUTDDkoQ6BCnRZA6ovjBPX
-wmWEqV27AsfjMWzY5dzefI4dJE2d+L31i/kjipp2EluWqWMngS17sUU8RnFc27N1
-u5QJYp7nhH2/V+n4hnKiRf6gIpppGayhzJAkbty0LS4MmFL3TJ8NJFliyQSk5nOk
-wjFdEjF9hQwVxLPhX0OSfpcQEoBfPTEECjEBMmUPw2uqQiWEKYYISrJKkEhYlVBR
-iAoFWdA0SCBSCNI4v7hdls3YIsuJo4wZN6MW9hIu4fZ23N82NpARCowfF/R/WiA0
-ccrf/xe6kRlofXNzeE+juKM49X3w2XmpN/aux8h78nbW09KCazULinIvNj/81ZIH
-SwqPnZSaB2a0tq2IrGzo7X7ELSm7uoj/UL07rR9xpsL1te3Zzfjgh4Hj8qw1nyqT
-oabD3fV9666nm0gNylt+eT/KW7WyKPjlTF2ssCj1+edtkFid2v1iybml+7vMe8Pq
-gbqqCYNfw/N/HSqedKfz6+asPud9x6vTme112vTzbwrh5CmN3+5O29eTU73pZXFO
-Tdvn3PS87iF5Tn/jvbXntmx5fcvdUH+25VZw4faj/fLsof6SmV1Hrsxdk4XW7att
-GMk+oYwMQfNHcMbWdFb1ss70x0sFwZ6lJ51Qzm+xIUvU
-=OMJR
+yMLBAnicrVNbaBxVGN4ktmokRMS3FIrThCiGOGfOmXPZPnlBCgpeKAhtZXuu2XF3
+Z9aZ2c2WZSNFu7YPVm1rLVYfIq31+qCFlt5AikRrQ5RUbfogIfVFY4mF0IqlWM8s
+FRR8dF6GOfPd/u+c80VfT6636/ye/efebBT2dJ09/VItt4nvnmg6IlJbnHzTKenO
+S5eVTtJCKVBO3nGBCwxkQlCjlcJUQuITyaQRFGBFDYcIK6NchDzsGsGFwS7kgANE
+pe8x5hMDXe6MOCYIx3RcjYMwtbIEWBEfQ0uXnHkSaWMYQRwAYKhSPoESAitvicUo
+yRg2nOCJHg0iu2Y/Cp14/4H/n3PXOnIIKeoR7XNNJMYIc82JSyQBDEhfAJYBEx2H
+vKItOo4aPEmKXEXjTmvEqei4VNaFOIrSrF+ZBhkK+IhRRn3G7Iw8KRYqOuWWzBhE
+BgNsMEOSCqCUxlxBSl3oc0g5gJJBI3yfas4QEi6WVoMpZHzPuL6wURL9fBg5eUSQ
+RyCxCWJdj0o6M0+CMdtc4uQ3OlJhqF2GgDZIu4hSJinygPEyE6DteAAi7iJliMh+
+20zERUQKA4VBhLrGebaVmcX1QHbEs626WcH4+PjoWBDVeRgGkldrPIxGQ53acNU4
+SiMZlS2omKbVJJ9VlG6pdlhaFG7qFUQQKntmLKOu4ySIQluZRf67Pex5I45uVINY
+F4IM4RNMXftkPrpuJW1LFGroASgQ8DEXkFMPEmU8AijzObNjCuAhLalEUgsNJKIE
+aOFKDAX8R53QWqV8zGraEkOe1mLttE5/vumWXFdvbuWK7uwy5Xpvv/PvK7Zu+NYb
+T7zaveh/2p56avWfM4+9ePho8dt7Jl6bhtef7rtr4eevm6XJ2m0P7d+4a7qnvW90
+YcP1Elp78NCXV7869dbHp3Zfend9o9wyb291F4LV5eDo8MXt54baxy+sm5i90fPo
+mrOTD5zoHzhw5I9LU9/sHVh735na5kfyeOXw0GLu8jNvHCmumP/gypP3T/UN7vjw
+k9nAe/nX1sTe4/SzofmLk7q547flkz3f/Tg3s+1Y/+VVS4Nnys7S+fcW1+yb/sXo
+uWvm93auv7Ect99pLL1/bP6jcuVgNPP6lavf18cnZ3fuvOMHVHmwOHD42qqlzY9v
+7ftp/fBy4YXtxVcebna5Fw51D+46sO1u0bp3bsNzfwHt0ZCs
+=c8wW
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -66,4 +79,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/roxasshadow
 
 ==================================================================
-
