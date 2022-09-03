@@ -18,10 +18,11 @@
         background-attachment: fixed, fixed;
         background-image: url('res/sup.gif');
         background-position: center right;
-        background-repeat: no-repeat;
+        background-repeat: repeat;
         background-color: #000;
         background-size: 25vw;
-	height: 100vh;
+        height: 100vh;
+		 animation: marquee 30s infinite linear;
       }
 
       section {
@@ -88,7 +89,17 @@
       @media screen and (max-width: 736px) {
         .me {
           position: relative;
-	  text-align: left;
+          text-align: left;
+        }
+      }
+
+      @keyframes marquee {
+        0% {
+          background-position: 0;
+        }
+
+        100% {
+          background-position: -1190px;
         }
       }
     </style>
