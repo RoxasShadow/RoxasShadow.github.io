@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Giovanni Capuano</title>
+      <link rel="stylesheet" href="https://sproogen.github.io/modern-resume-theme/assets/main.css">
+      <link rel="shortcut icon" type="image/x-icon" href="https://sproogen.github.io/modern-resume-theme/images/favicon.ico">
+      <style type="text/css">
+         @import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,700,500,500italic,400italic,300italic,100italic,700italic);
+         @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css);
+         @import url(https://use.fontawesome.com/releases/v5.11.2/css/all.css);
+         @import url(https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css);
+
+         button:disabled,input[type="button"]:disabled,input[type="reset"]:disabled,input[type="submit"]:disabled{
+           cursor:not-allowed;
+           opacity:0.5
+         }
+         button:disabled:hover,input[type="button"]:disabled:hover,input[type="reset"]:disabled:hover,input[type="submit"]:disabled:hover{
+           background-color:#477dca
+         }
+         fieldset{
+           background-color:#f7f7f7;
+           border:1px solid #ddd;
+           margin:0 0 0.75rem;
+           padding:1.5rem
+         }
+         input,label,select{
+           display:block;
+           font-family:"Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif;
+           font-size:1rem
+         }
+         label{
+           font-weight:600;
+           margin-bottom:0.375rem
+         }
+         label.required::after{
+           content:"*"
+         }
+         label abbr{
+           display:none
+         }
+         select{
+           margin-bottom:1.5rem;
+           max-width:100%;
+           width:auto
+         }
+         dl{
+           margin-bottom:0.75rem
+         }
+         dl dt{
+           font-weight:bold;
+           margin-top:0.75rem
+         }
+         dl dd{
+           margin:0
+         }
+         table{
+           border-collapse:collapse;
+           font-feature-settings:"kern", "liga", "tnum";
+           margin:0.75rem 0;
+           table-layout:fixed;
+           width:100%
+         }
+         th{
+           border-bottom:1px solid #a6a6a6;
+           font-weight:600;
+           padding:0.75rem 0;
+           text-align:left
+         }
+         td{
+           border-bottom:1px solid #ddd;
+           padding:0.75rem 0
+         }
+         tr,td,th{
+           vertical-align:middle
+         }
+         hr{
+           border-bottom:1px solid #ddd;
+           border-left:0;
+           border-right:0;
+           border-top:0;
+           margin:1.5rem 0
+         }
+         img,picture{
+           margin:0;
+           max-width:100%
+         }
+         html{
+           box-sizing:border-box
+         }
+         *,*::after,*::before{
+           box-sizing:inherit
+         }
+         body{
+           background:#ffffff;
+           font-family:Roboto, sans-serif;
+           -webkit-font-smoothing:antialiased
+         }
+         .center-text{
+           text-align:center
+         }
+         .container{
+           margin-top:30px
+         }
+         @media print{
+           .container{
+             margin-top:20px
+           }
+         }
+         .header-container{
+           margin-top:50px
+         }
+         .header-right{
+           text-align:right
+         }
+         .header-left{
+           margin-top:30px
+         }
+         @media print{
+           .header-left{
+             margin-top:0px
+           }
+         }
+         .header-right p{
+           font-size:1.6rem;
+           text-align:right
+         }
+         @media print{
+           a[href]:after{
+             content:none !important
+           }
+           img[src]:after{
+             content:none !important
+           }
+           .col-sm-1,.col-sm-2,.col-sm-3,.col-sm-4,.col-sm-5,.col-sm-6,.col-sm-7,.col-sm-8,.col-sm-9,.col-sm-10,.col-sm-11,.col-sm-12{
+             float:left
+           }
+           .col-sm-12{
+             width:100%
+           }
+           .col-sm-11{
+             width:91.66666667%
+           }
+           .col-sm-10{
+             width:83.33333333%
+           }
+           .col-sm-9{
+             width:75%
+           }
+           .col-sm-8{
+             width:66.66666667%
+           }
+           .col-sm-7{
+             width:58.33333333%
+           }
+           .col-sm-6{
+             width:50%
+           }
+           .col-sm-5{
+             width:41.66666667%
+           }
+           .col-sm-4{
+             width:33.33333333%
+           }
+           .col-sm-3{
+             width:25%
+           }
+           .col-sm-2{
+             width:16.66666667%
+           }
+           .col-sm-1{
+             width:8.33333333%
+           }
+           .col-print-12{
+             width:100%
+           }
+           .no-print,.no-print *{
+             display:none !important
+           }
+         }
+         .button--sacnite::before{
+           content:'';
+           position:absolute;
+           top:0;
+           left:0;
+           width:100%;
+           height:100%;
+           border-radius:inherit;
+           z-index:-1;
+           box-shadow:inset 0 0 0 35px #333;
+           -webkit-transform:scale3d(0.9, 0.9, 1);
+           transform:scale3d(0.9, 0.9, 1);
+           -webkit-transition:box-shadow 0.3s, -webkit-transform 0.3;
+           transition:box-shadow 0.3s, transform 0.3s
+         }
+         .button{
+           min-width:150px;
+           border:none;
+           background:none;
+           color:inherit;
+           vertical-align:middle;
+           position:relative;
+           z-index:1;
+           -webkit-backface-visibility:hidden;
+           -moz-osx-font-smoothing:grayscale;
+           border-radius:0;
+           float:none;
+           margin:0 auto;
+           margin-top:0px;
+           padding:5px 20px;
+           display:inline-block;
+           font-weight:400;
+           max-width:400px
+         }
+         .button--round-l{
+           border-radius:40px
+         }
+         .button.button--sacnite{
+           width:60px;
+           height:60px;
+           min-width:0;
+           padding:0;
+           color:#fff;
+           -webkit-transition:color 0.3s;
+           transition:color 0.3s
+         }
+         .button--sacnite:hover{
+           color:#333
+         }
+         .button--sacnite:hover::before{
+           box-shadow:inset 0 0 0 2px #333;
+           -webkit-transform:scale3d(1, 1, 1);
+           transform:scale3d(1, 1, 1)
+         }
+         body{
+           color:#333;
+           font-family:Roboto, sans-serif;
+           font-feature-settings:"kern", "liga", "pnum";
+           font-size:1rem;
+           line-height:1.5
+         }
+         @media print{
+           body{
+             font-size:0.9rem
+           }
+         }
+         h1,h2,h3,h4,h5,h6{
+           font-family:Roboto, sans-serif;
+           font-size:1rem;
+           line-height:1.2;
+           margin:0 0 0.75rem
+         }
+         p{
+           margin:0 0 0.75rem
+         }
+         a{
+           color:#477dca;
+           transition:color 150ms ease
+         }
+         a:active,a:focus,a:hover{
+           color:#355e98
+         }
+         h1{
+           font-size:4rem;
+           margin-bottom:0.1rem;
+           font-weight:500
+         }
+         h2{
+           font-weight:300;
+           font-size:2rem
+         }
+         h3{
+           font-weight:300;
+           font-size:3rem;
+           text-align:center;
+           border-bottom:dashed 2px #CCCCCC;
+           padding-bottom:10px;
+           margin-bottom:40px
+         }
+         @media print{
+           h3{
+             margin-bottom:20px
+           }
+         }
+         h4{
+           font-weight:300;
+           font-size:2.5rem;
+           margin-bottom:3px
+         }
+         p,ul{
+           font-size:1.6rem;
+           text-align:justify
+         }
+         a i{
+           font-size:1.6rem
+         }
+         mark{
+           padding:2px 4px;
+           font-size:90%;
+           color:#fff;
+           background-color:#00637C;
+           border-radius:3px;
+           -webkit-box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25);
+           box-shadow:inset 0 -1px 0 rgba(0,0,0,0.25)
+         }
+         ul.icons a:hover{
+           background:rgba(0,0,0,0.025)
+         }
+         ul.icons li{
+           display:inline-block;
+           padding-left:0.75rem
+         }
+         ul.icons a{
+           -moz-transition:background-color 0.25s ease-in-out;
+           -webkit-transition:background-color 0.25s ease-in-out;
+           -ms-transition:background-color 0.25s ease-in-out;
+           transition:background-color 0.25s ease-in-out;
+           display:inline-block;
+           width:2.75rem;
+           height:2.75rem;
+           line-height:2.8rem;
+           text-align:center;
+           border:0;
+           box-shadow:none;
+           padding:0;
+           border-radius:100%;
+           color:#aaa
+         }
+         .icons i{
+           font-size:30px;
+           line-height:60px
+         }
+         .icons{
+           padding:0;
+           font-size:1rem;
+           margin-bottom:20px;
+           text-align:right
+         }
+         @media screen and (max-width: 768px){
+           .icons{
+             text-align:center
+           }
+         }
+         .header-right p{
+           margin-bottom:3px
+         }
+         .header-right a{
+           color:inherit;
+           font-weight:500
+         }
+         @media screen and (max-width: 768px){
+           .header-container div{
+             text-align:center
+           }
+           .header-right p{
+             text-align:center
+           }
+           .header-left{
+             margin-top:0px
+           }
+         }
+         .profile-img{
+           width:200px;
+           height:200px;
+           margin:0 auto;
+           margin-bottom:20px;
+           display:block;
+           border-radius:100px;
+           background-size:cover;
+           background-position:center;
+           background-repeat:repeat, no-repeat;
+           -moz-box-shadow:inset 0 0 20px #636161;
+           -webkit-box-shadow:inset 0 0 20px #636161;
+           box-shadow:inset 0 0 20px #636161
+         }
+         .into-text-1{
+           margin-top:30px
+         }
+         @media only screen and (max-width: 992px){
+           .into-text-1{
+             margin-top:20px
+           }
+         }
+         .list-container h3{
+           margin-bottom:0
+         }
+         .layout{
+           margin-top:3rem;
+           display:flex;
+           flex-direction:row
+         }
+         .layout .details{
+           text-align:left
+         }
+         .layout .details p{
+           margin-bottom:3px;
+           font-size:1.6rem;
+           text-align:inherit;
+           font-weight:300
+         }
+         .layout .details p b{
+           font-weight:500
+         }
+         @media screen and (max-width: 768px){
+           .layout .details{
+             text-align:center !important
+           }
+           .layout .details p{
+             text-align:center !important
+           }
+         }
+         .layout .details a{
+           color:inherit;
+           font-style:italic;
+           font-weight:300
+         }
+         .layout .details .fa{
+           font-size:2rem
+         }
+         .layout .details .link{
+           font-size:1.5rem
+         }
+         .layout .details h4{
+           margin-bottom:0.1rem;
+           font-weight:500
+         }
+         @media print{
+           .layout .details h4{
+             margin-bottom:0.2rem
+           }
+         }
+         .layout .details h4 a{
+           font-weight:500
+         }
+         .layout-right{
+           flex-direction:row-reverse
+         }
+         .layout-right .details,.layout-top-right .details{
+           text-align:right
+         }
+         @media screen and (max-width: 768px){
+           .layout-left,.layout-right{
+             flex-direction:column
+           }
+         }
+         .layout-top-middle,.layout-top,.layout-top-right{
+           flex-direction:column
+         }
+         .layout-top-middle .details,.layout-top-middle .content,.layout-top .details,.layout-top .content,.layout-top-right .details,.layout-top-right .content{
+           width:100%
+         }
+         .layout-top-middle .details{
+           text-align:center
+         }
+         .footer-container{
+           margin-top:100px
+         }
+         .footer-container p{
+           text-align:center;
+           font-style:italic;
+           font-weight:300
+         }
+         .footer-container a{
+           color:inherit;
+           font-style:italic;
+           font-weight:300
+         }
+         .page-content{
+           padding:0
+         }
+         .contact a{
+           line-height:50px;
+           margin-left:30px;
+           color:#BBBBBB;
+           -webkit-transition:color 0.4s ease;
+           -moz-transition:color 0.4s ease;
+           transition:color 0.4s ease
+         }
+         .contact a:hover{
+           color:#4C4C4C
+         }
+      </style>
+   </head>
+   <body>
+      <div class="container header-container">
+         <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
+               <h1>Giovanni Capuano</h1>
+               <h2>Senior Software Engineer</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
+               <ul class="icons no-print">
+                  <li>
+                     <a target="_blank" href="https://github.com/RoxasShadow" class="button button--sacnite button--round-l">
+                       <i class="fab fa-github" title="GitHub link"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a target="_blank" href="https://www.linkedin.com/in/giovannicapuano" class="button button--sacnite button--round-l">
+                       <i class="fab fa-linkedin" title="Linkedin link"></i>
+                     </a>
+                  </li>
+                  <li>
+                     <a target="_blank" href="https://www.instagram.com/giovanni.rxs" class="button button--sacnite button--round-l">
+                       <i class="fab fa-instagram" title="Instagram link"></i>
+                     </a>
+                  </li>
+               </ul>
+               <p>
+                  Based in: <b>London</b>
+               </p>
+               <p>
+                  Email: <a href="mailto:hey@giovannicapuano.net" target="_blank">hey@giovannicapuano.net</a>
+               </p>
+            </div>
+         </div>
+      </div>
+      <main class="page-content" aria-label="Content">
+         <div class="wrapper">
+            <div class="container intro-container">
+              <h3>About me</h3>
+              <div class="row clearfix">
+                <div class="col-xs-12 col-sm-4 col-md-3 no-print">
+                   <span class="profile-img" style="background-size: 340px; background-position-y: -90px; background-image: url(https://i.imgur.com/dIRNy1k.png)"></span>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-9 col-print-12">
+                  <p>I love designing and developing <b>small, fast, language-agnostic, disposable, well tested and carefully documented</b> pieces of softwares and architectures, which behaviors and interactions are easily <b>traced, monitored and observable</b>. Ecosystems engineers are glad and incentivised to work with and extend, feel <b>ownership</b> of and are keen to <b>experiment and innovate</b>.</p>
+
+                  <p><b>Ease of change, scalability, disaster recovery and decision records</b> are topics I value to stress early on.</p>
+
+                  <p>Professionally, in the latest couple of years I have worked extensively with tools and technologies such as
+                    <ul style="list-style: square;">
+                      <li><b>Docker</b> <b>Terraform</b> and <b>GitHub Actions</b></li>
+                      <li><b>Ruby on Rails</b> <b>Grape</b> <b>Kotlin</b> and <b>NodeJS</b>
+                      <li><b>PostgreSQL</b> and <b>MongoDB</b></li>
+                      <li><b>Kafka</b> <b>Kafka/Mongo Connector</b> and <b>Redis</b></li>
+                      <li><b>AWS S3</b> and <b>SQS</b></li>
+                      <li><b>Pacts</b></li>
+                      <li><b>CDC/Event schemas</b></li>
+                      <li><b>OpenTelemetry</b> <b>NewRelic</b> <b>Backstage</b></li>
+                      <li><b>Solidity</b> and <b>Smart contracts</b></li>
+                    </ul>
+                  </p>
+
+                  <p>I started my path as an engineer back in 2012 when I wanted to build applications for supporting my friends and me building tactics and strategies for competitive Pokémon battles. That also led me to approach web development first with the a classic <mark>LAMP</mark> stack and then then with <mark>Ruby</mark> (<mark>Sinatra</mark>, <mark>Hanami</mark> and <mark>Ruby on Rails</mark>), <mark>Kotlin</mark> and the <mark>Rust</mark> programming language, which I started studying since its beta stage. I also enjoy building web-components with both modern <mark>Vanilla JS</mark> and <mark>React</mark>.</p>
+
+                  <p>I also grew curiosity towards Arduino, Raspberry PI, Android and so on, interests that gave me reasons to look into languages such as <mark>Swift</mark> and practice a bit more <mark>Java</mark> and <mark>C</mark>.</p>
+
+                  <p>In 2015 I accepted to join a digital studio company to meet a bunch of highly skilled professionals which gave me the chance to further <b>grow</b> as human being and engineer, and at the same time having the opportunity to <b>shape products</b> that had a real <b>impact</b> on people's life</p>
+
+                  <p>From there I joined Honeypot, a startup that was in the process of going live, in which I contributed as second in-house engineer to the foundation of the culture and tech infrastructure. During that period I also contributed to the organization of the first edition of RustFest (https://rustfest.global) which had place in Berlin on 2016.</p>
+
+                  <p>Currently, at Simply Business my team mates (a brilliant, cohesive and passionate bunch!) and I are building and delivering <b>critical components</b> of the tech infrastructure while constantly <b>expanding and sharing</b> our knowledge, with frequent and efficient <b>feedback and retrospectives</b> - and still I enjoy writing code as hobbist, in the attempt to create something <b>meaningful</b> for me and others, or just having fun by doing it.</p>
+                </div>
+              </div>
+            </div>
+            <div class="container list-container">
+              <h3>Work experience</h3>
+
+              <div class="row clearfix layout layout-left">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+                  <h4>Simply Business</h4>
+                  <p><b>Senior Software Engineer</b></p>
+                  <p>October, 2019 - Present</p>
+                  <a href="https://www.simplybusiness.com" target="_blank" class="link">simplybusiness.com</a>
+                  <p class="no-print aditional-links"></p>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+                  <p>Acquired by Travelers [NYSE: TRV] in 2017 and based in London and Boston, SB is the <b>leading online business insurance brokerage</b> that specializes in protecting businesses providing the protection suited to their risks and priorities and have helped over 1M businesses across thousands of different trades among <b>UK and USA</b>.</p>
+
+                  <ul>
+                    <li>We designed and delivered a micro-service based on AWS SQS for <b>CDC-ing created policy to internal services</b> upon S3 notification. Localstack and terraform made the whole thing working seamless among different environments.</li>
+
+                    <li>As pre-requisite to break critical parts of the infrastructures into independent services, we had to improve the reliability of our Change Data Capture (CDC) mechanisms for <b>guaranteeing atomic publishing of events and ensuring delivery</b> for consumers following successful database commits, especially during peak loads - some of the issues we intended to mitigate with the solution we designed and delivered were dual writes; Kafka failing to deliver under load or network errors; different failure rates due to database and kafka being on different networks; difficulty to observe or guarantee SLIs (freshness, delay...) when hopping through the pipeline... We attached MongoDB-Kafka Source Connector to a replica instance from which reading the change stream and publish and made a transformer service to normalise and publish read-view topics for consumption by other systems that implemented a simple outbox gem we released for internal apps to deal with both the CDC system and the domain event streaming with ease.</li>
+
+                    <li>A consistent part of the US call center's daily work used to be centered around a set of large, complex and slow spreadsheets. Team was tasked to <b>R&D an internal platform for introducing automation to otherwise inefficient workflows</b>. As the call center was advancing their knowledge of the system we were building, few specifications remained set in stone and we conducted fornight demos and worked very close to the stakeholders for responding to their feedback promptly.</li>
+
+                    <li>As result of investigations and evaluations my line manager and I had with other clients&stakeholders, my team transitioned most of the organization's data to a <b>different kind of storage solution</b> (bringing resilience, lighter bills and better performance too) as they were getting close to the hard limit of the current infra. We did work on the organization's ORM for dealing with data having close relationships (embedded docs, etc.) with documents placed in different storage solutions but queried seamlessly.</li>
+
+                    <li>As part of my role, I have interviewed engineers applying to join the organization.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row clearfix layout layout-left">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+                  <h4>Honeypot</h4>
+                  <p><b>Software Engineer</b></p>
+                  <p>November, 2019 - May, 2018</p>
+                  <a href="https://www.honeypot.io" target="_blank" class="link">honeypot.io</a>
+                  <p class="no-print aditional-links"></p>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+                  <p>Honeypot is Europe's developer-focused job platform that let companies do the first move, using a powerful set of <b>search engine filters and keywords</b> and also <b>receving tailored emails</b> showing talents that are most relevant for them. Recruiters are also able to connect to their account <b>ATS</b> such as <i>Greenhouse</i> or <i>Personio</i> to avoid any additional manual work.</p>
+
+                  <p>I joined the company as <b>second in-house full-time engineer</b> and during the 3 years and half (then it got acquired by the German LinkedIn competitor: XING/NewWork) I have contributed to enstablish a <b>developer-focused culture, shaped a solid and mantainable infrastructure, sane and safe workflows</b> and at every opportunity shared knowledge for providing a <b>clear understanding</b> of the software development processes among all the non-tech colleagues.</p>
+
+                  <ul>
+                    <li>I have done <b>daily round of interviews</b> to developers applying to join the organization and worked with my colleagues on establishing a sound internal hiring process.</li>
+
+                    <li>Supported the <b>Business Intelligence</b> team with the creation of a foundation of databases and workflows to allow them applying their algorithms and analysis on sandboxed, reliable data.</li>
+
+                    <li>Built an open source search engine allowing the search for talents becoming dozen of times faster, with the service being resilient and rock solid. I started working on it when Rust was not yet v1.0 and many features and libraries were not stable or fully-functioning yet - thus a lot of resources went to contributing to other projects (including the Rust buildpack for Heroku), to Rollbar and CircleCI and to the whole workflow to deploy and orchestrate all the different stages. Initial challenges aside, Rust proved to be a solid choice for such a kind of a project.</li>
+
+                    <li>Technologies I have been working with include: Ruby on Rails, Rust, Elixir, Ember.JS, Redis, Heroku, CircleCI and TravisCI, AWS Cloudfront and S3, Grape (RESTful APIs based on JWT and TOTP authentication), Postmark and Mailchimp, Greenhouse and Personio, MindMatch AI, TalkJS...</li>
+                  </ul>
+
+                  <ul>
+                    <li>https://github.com/honeypotio/reina – a CLI tool and GitHub bot for solving our need of orchestrating the deployments
+                  of the feature stagings of our applications on Heroku</li>
+                    <li>https://github.com/honeypotio/searchspot – ElasticSearch-backed client/server written in Rust used by recruiters to search the talents they are looking for</li>
+                    <li>https://github.com/benashford/rs-es – Rust client for the ElasticSearch REST API I contributed to in order to make Searchspot</li>
+                    <li>https://github.com/RoxasShadow/rollbar-rs/ – library to track and report errors, exceptions and messages from Searchspot application to Rollbar</li>
+                    <li>Blog posts such as https://blog.honeypot.io/errors-and-exceptions-in-rust</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="row clearfix layout layout-left">
+                <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
+                  <h4>Moze</h4>
+                  <p><b>Software Engineer</b></p>
+                  <p>April, 2014 - October, 2015</p>
+                  <a href="https://www.honeypot.io" target="_blank" class="link">honeypot.io</a>
+                  <p class="no-print aditional-links"></p>
+                </div>
+
+                <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
+                  <p>Moze is an Italian studio of designers and developers which designs and builds digital products for entrepreneurs and forward-looking companies to shape or enhance digital products and services through a pragmatic design process and agile, incremental development.</p>
+
+                  <p>I have been the first in-house full-time engineer after years the company relied mostly on contractors. I was close to every side of the projects, from the <b>front-end to the back-end to the dev-ops</b>.</p>
+
+                  <ul>
+                    <li>Among the other projects, we built Bugree: similarly to Proton Mail and MEGA, it was the first portal to make communications happens under NDA, and the first portal with <b>client-side encryption bounded to a dynamic key</b>, therefore messages never left any electronic footprint. There were more features like scrolling text, torch mode, limited openings and watermarks. Both messages and attachments were secured by end-to-end encryption and notifications were <b>real-time</b> thanks to a websockets-based NodeJS application we made. Its frontend was built with ReactJS and AngularJS and we implemented multiple payment processors including PayPal and Stripe.</li>
+
+                    <li>We also built GODO Shopping (for which we also made and open sourced zanox-rb, as we needed a good library to interact with the APIs of the popular affiliate marketing network service), which was a marketplace that with every purchase was granted a percentage in cashback to the buyer.</li>
+
+                    <li>Tourizan was another good project: like AirBnB but for enjoying unique experiences and places in Italy.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="container text-container">
+              <h3>Bio</h3>
+              <div class="row clearfix">
+                <div class="col-md-12">
+                  <p>Born near <b>Naples, Italy</b>. Graduated in scientific high school and attended <b>Computer Engineering</b> at the University of Naples "Federico II" before leaving my hometown to accept a role at Moze, in <b>Milan</b>.</p>
+
+                  <p>Italian, Neapolitan, English and some Spanish aside, I have been studying <b>Japanese</b> and joined an intensive course in a language school in Kyoto, in the meantime I was living with a local family thanks to the homestay program.</p>
+
+                  <p>I love travelling and discovering new cuisines of all world but also all the regional cuisines of Italy. I love to prepare food and experiment new dishes everyday in my kitchen (and share the results on my Instagram!).</p>
+
+                  <p>Being on holiday means for me means hiking mountains with friends and go discovering new pizza places or enjoying the seasonal menus of my favorites!</p>
+
+                  <p>I'm a also passioned videogamer since I have memory of: always thirst of superb game and level designs, great soundtracks and meaningful stories.</p>
+                </div>
+              </div>
+            </div>
+         </div>
+      </main>
+      <div class="container footer-container">
+         <p>
+            Giovanni Capuano -
+            <a href="mailto:hey@giovannicapuano.net" target="_blank">hey@giovannicapuano.net</a>&nbsp;- References on request
+         </p>
+      </div>
+   </body>
+</html>
