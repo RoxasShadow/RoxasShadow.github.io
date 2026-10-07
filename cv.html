@@ -544,14 +544,18 @@
 
                   <p>Professionally, in the latest couple of years I have worked extensively with tools and technologies such as
                     <ul style="list-style: square;">
-                      <li><b>Docker</b> <b>Terraform</b> and <b>GitHub Actions</b></li>
-                      <li><b>Ruby on Rails</b> <b>Grape</b> <b>Kotlin</b> and <b>NodeJS</b>
-                      <li><b>PostgreSQL</b> and <b>MongoDB</b></li>
-                      <li><b>Kafka</b> <b>Kafka/Mongo Connector</b> and <b>Redis</b></li>
-                      <li><b>AWS S3</b> and <b>SQS</b></li>
-                      <li><b>Pacts</b></li>
-                      <li><b>CDC/Event schemas</b></li>
+                      <li><b>Docker</b> <b>Terraform</b> <b>GitHub Actions</b> and <b>Semaphore CI</b></li>
+                      <li><b>Ruby on Rails</b> <b>Grape</b> <b>Kotlin/Spring Boot</b> and <b>NodeJS</b></li>
+                      <li><b>TypeScript</b> and <b>React</b> (design systems, Storybook, feature flags and A/B experiments)</li>
+                      <li><b>PostgreSQL</b> and <b>MongoDB</b> (change streams, Atlas)</li>
+                      <li><b>Kafka</b> <b>Kafka Connect</b> (MongoDB and PostgreSQL source connectors) and <b>Redis</b></li>
+                      <li><b>AWS S3</b> <b>SQS</b> and <b>ECS</b></li>
+                      <li><b>Pacts</b> and <b>OpenAPI</b></li>
+                      <li><b>CDC/Event schemas</b> and the <b>transactional outbox</b> pattern</li>
+                      <li><b>Stripe</b> and <b>TokenEx</b> payment integrations</li>
+                      <li><b>Amplitude</b> experiments, <b>Snowplow</b> and <b>GTM</b> analytics</li>
                       <li><b>OpenTelemetry</b> <b>NewRelic</b> <b>Backstage</b></li>
+                      <li><b>RBS/Steep</b> gradual typing for Ruby</li>
                       <li><b>Solidity</b> and <b>Smart contracts</b></li>
                     </ul>
                   </p>
@@ -564,7 +568,7 @@
 
                   <p>From there I joined Honeypot, a startup that was in the process of going live, in which I contributed as second in-house engineer to the foundation of the culture and tech infrastructure. During that period I also contributed to the organization of the first edition of RustFest (https://rustfest.global) which had place in Berlin on 2016.</p>
 
-                  <p>Currently, at Simply Business my team mates (a brilliant, cohesive and passionate bunch!) and I are building and delivering <b>critical components</b> of the tech infrastructure while constantly <b>expanding and sharing</b> our knowledge, with frequent and efficient <b>feedback and retrospectives</b> - and still I enjoy writing code as hobbist, in the attempt to create something <b>meaningful</b> for me and others, or just having fun by doing it.</p>
+                  <p>Currently, at Simply Business my team mates (a brilliant, cohesive and passionate bunch!) and I have gone from building the <b>event-streaming backbone</b> of the company to rebuilding the <b>customer-facing sales journey and checkout</b>, while constantly <b>expanding and sharing</b> our knowledge, with frequent and efficient <b>feedback and retrospectives</b> - and still I enjoy writing code as hobbist, in the attempt to create something <b>meaningful</b> for me and others, or just having fun by doing it.</p>
                 </div>
               </div>
             </div>
@@ -581,24 +585,35 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
-                  <p>Acquired by Travelers [NYSE: TRV] in 2017 and based in London and Boston, SB is the <b>leading online business insurance brokerage</b> that specializes in protecting businesses providing the protection suited to their risks and priorities and have helped over 1M businesses across thousands of different trades among <b>UK and USA</b>.</p>
+                  <p>Acquired by Travelers [NYSE: TRV] in 2017 and based in London and Boston, Simply Business is the <b>leading online business insurance brokerage</b>: it protects over one million small businesses across thousands of trades in the <b>UK and the US</b>, matching each of them with the cover suited to its risks and priorities.</p>
+
+                  <p>I joined in 2019 as a Senior Software Engineer in the team that owns the company's <b>data streaming backbone</b> and the back-office for <b>policy renewals and cancellations</b>; since late 2025 I have been rebuilding the <b>sales journey and checkout</b> in React and TypeScript. Rather than list everything, here is what the work has taught me to do well, with one example each.</p>
+
+                  <p><b>Taking a problem from ambiguity to production.</b> I am comfortable with the part before the code: discovery, spikes, writing the architecture decision record, deciding what not to build. For Record Verification, the service that proves the company's data lake matches production, I ran the discovery and the spikes, wrote the ADR and led the build to a finance audit deadline, then stayed for the aftercare until the alerts could be trusted.</p>
+
+                  <p><b>Designing systems that stay correct when things fail.</b> Most of my architecture work has been about consistency across boundaries. With my team I took the Kafka Outbox from a dual-write problem to the company standard for change data capture and domain events, over MongoDB and later PostgreSQL, with freshness SLOs, dead-letter runbooks and multi-region disaster recovery gamedays. The same instinct shows up in smaller places, such as idempotency keys and cart digests in the checkout.</p>
+
+                  <p><b>Making technical choices and bringing people along.</b> I will argue for an unconventional choice when it is the right one, and then make sure the team is not left behind: TypeScript for Record Verification in a Ruby organisation, SAML/Okta single sign-on replacing LDAP, the first Bootstrap upgrade in twelve years on the renewals application. Each one ended with the team able and happy to work on it, which I consider part of the deliverable.</p>
+
+                  <p><b>Leading work across teams.</b> I led the TokenEx payment migration to the new React architecture: built the first version and the patterns, then onboarded engineers from two teams so that we could finish it together. The outbox adoption worked the same way, migrating some fifty event types with the teams that owned them, and the rating logs extraction meant running the design conversations with the pricing, audit and rating teams.</p>
+
+                  <p><b>Full-stack product engineering.</b> I am at home on both sides of a typed contract: Rails page services and builders on one side, React components with their stories and tests on the other, with payments (Stripe, TokenEx), experiments (Amplitude) and analytics (Snowplow, GTM) in between. The checkout, coverage selection and confirmation pages of the sales journey are where this currently lands.</p>
+
+                  <p><b>Operating what we build.</b> Observability, alerting, runbooks and documentation are part of my definition of done, not a follow-up. I keep every service I touch documented on the internal developer portal, write and review incident reviews, and take my turn on incidents and alerts. I have kept the renewals application current for six years, from Rails 5.2 to 8.</p>
+
+                  <p><b>Making the team work well.</b> I pair and explain a lot, review quickly so that nobody waits on me, and facilitate retrospectives, risk storming and similar sessions, each designed around the context and the goals the project has at that moment, trying new techniques and asking for feedback to refine them. When ownership moves I hand it over with written guides and code walkthroughs. I interview engineers applying to join us.</p>
+
+                  <p><b>Working with AI.</b> I use AI coding agents every day and maintain the team's agent skills and guides for the component architecture, so that generated code fits the codebase and its conventions. Code is getting cheap; the judgement about what to build, how it fails and how the team learns is where I spend my effort.</p>
+
+                  <p><b>Selected work</b></p>
 
                   <ul>
-                    <li>
-                      <p>Designed and delivered a Change-Data-Capture solution for <b>gguaranteeing atomic, reliable, and consistent processing of real-time events between complex systems</b>, which ensured that only the most recent data that successfully committed to global and multi-region databases is delivered to consumer services.</p>
-
-                      <p>Some of the issues we intended to mitigate with our solution were dual writes; Kafka failing to deliver under load or network errors; different failure rates due to database and kafka being on different networks; difficulty to observe or guarantee SLIs (freshness, delay...) when hopping through the pipeline. Our solution included attaching a MongoDB-Kafka Source Connector to a replica instance from which reading the change stream and, after hopping through a transformer service to normalise the data, publishing to read-view topics for consumption by other systems.</p>
-
-                      <p>We also built a solution for AWS S3 publishing relying on its notification systems and the SQS stack.</p>
-                    </li>
-
-                    <li>Revamped the way we used to <b>organise information with the goal of making it easily accessible, structured, collaborative and pleasant to work with</b>. In this framework, I've got appreciation for setting up an archive for things describing past states and digital ephemera: documents, emails, walkthroughs, diagrams, notes, briefs, incidents... that proved useful for answering questions and promote what I would call <b>"librarian" culture.</b></li>
-
-                    <li>Conducted research and development to <b>build a platform that automated workflows</b> previously done by call center operators. The workflows involved large, complex, and slow spreadsheets. During the development process, we held fortnight demos to get feedback from a small sample of users and stakeholders. Few specifications remained set in stone and responding to their feedback thanks to quick iterations led us to bring promptly more happiness and efficiency among the teams.</li>
-
-                    <li>The organization's data amount got close to the hard limit of what the current infrastructure could support. After analyzing the needs of different teams and stakeholders, we transitioned a large part of the data to a <b>completely different kind of storage solution, saving the company a dramatic amount of cash, making read and writes faster</b> and allowing us to keep everything running smoothly without any disruptions. We worked close to the ORM to ensure no code changes were needed even though part of the data was on different storage solution.</li>
-
-                    <li>As part of my responsibilities, I have <b>interviewed engineers</b> applying to join the organization.</li>
+                    <li>2025 - present: sales journey and checkout migration to React / TypeScript (coverage selection, confirmation pages, Combined Payment Page, Stripe and TokenEx, multi-product carts).</li>
+                    <li>2025: Record Verification, a Node.js / TypeScript service proving the data lake matches production (MongoDB change streams, S3, Snowflake).</li>
+                    <li>2024 - 2025: rating logs and insurer upsells moved into the rating service (OpenAPI, Pact, CDC in transactions).</li>
+                    <li>2022 - 2025: Kafka Outbox, the company-wide CDC and domain events platform (MongoDB and PostgreSQL, Kafka Connect, Kotlin transformer, New Relic alerting, disaster recovery).</li>
+                    <li>2019 - present: Continuous Cover, the UK and US renewals and cancellations back-office (US workflow, SAML/Okta, Bootstrap 5, Rails 8).</li>
+                    <li>2020 - 2021: quoteset persistence moved from MongoDB to S3 behind a Mongoid-compatible driver, with no changes for callers.</li>
                   </ul>
                 </div>
               </div>
