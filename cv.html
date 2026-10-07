@@ -544,14 +544,18 @@
 
                   <p>Professionally, in the latest couple of years I have worked extensively with tools and technologies such as
                     <ul style="list-style: square;">
-                      <li><b>Docker</b> <b>Terraform</b> and <b>GitHub Actions</b></li>
-                      <li><b>Ruby on Rails</b> <b>Grape</b> <b>Kotlin</b> and <b>NodeJS</b>
-                      <li><b>PostgreSQL</b> and <b>MongoDB</b></li>
-                      <li><b>Kafka</b> <b>Kafka/Mongo Connector</b> and <b>Redis</b></li>
-                      <li><b>AWS S3</b> and <b>SQS</b></li>
-                      <li><b>Pacts</b></li>
-                      <li><b>CDC/Event schemas</b></li>
+                      <li><b>Docker</b> <b>Terraform</b> <b>GitHub Actions</b> and <b>Semaphore CI</b></li>
+                      <li><b>Ruby on Rails</b> <b>Grape</b> <b>Kotlin/Spring Boot</b> and <b>NodeJS</b></li>
+                      <li><b>TypeScript</b> and <b>React</b> (design systems, Storybook, feature flags and A/B experiments)</li>
+                      <li><b>PostgreSQL</b> and <b>MongoDB</b> (change streams, Atlas)</li>
+                      <li><b>Kafka</b> <b>Kafka Connect</b> (MongoDB and PostgreSQL source connectors) and <b>Redis</b></li>
+                      <li><b>AWS S3</b> <b>SQS</b> and <b>ECS</b></li>
+                      <li><b>Pacts</b> and <b>OpenAPI</b></li>
+                      <li><b>CDC/Event schemas</b> and the <b>transactional outbox</b> pattern</li>
+                      <li><b>Stripe</b> and <b>TokenEx</b> payment integrations</li>
+                      <li><b>Amplitude</b> experiments, <b>Snowplow</b> and <b>GTM</b> analytics</li>
                       <li><b>OpenTelemetry</b> <b>NewRelic</b> <b>Backstage</b></li>
+                      <li><b>RBS/Steep</b> gradual typing for Ruby</li>
                       <li><b>Solidity</b> and <b>Smart contracts</b></li>
                     </ul>
                   </p>
@@ -564,7 +568,7 @@
 
                   <p>From there I joined Honeypot, a startup that was in the process of going live, in which I contributed as second in-house engineer to the foundation of the culture and tech infrastructure. During that period I also contributed to the organization of the first edition of RustFest (https://rustfest.global) which had place in Berlin on 2016.</p>
 
-                  <p>Currently, at Simply Business my team mates (a brilliant, cohesive and passionate bunch!) and I are building and delivering <b>critical components</b> of the tech infrastructure while constantly <b>expanding and sharing</b> our knowledge, with frequent and efficient <b>feedback and retrospectives</b> - and still I enjoy writing code as hobbist, in the attempt to create something <b>meaningful</b> for me and others, or just having fun by doing it.</p>
+                  <p>Currently, at Simply Business my team mates (a brilliant, cohesive and passionate bunch!) and I have gone from building the <b>event-streaming backbone</b> of the company to rebuilding the <b>customer-facing sales journey and checkout</b>, while constantly <b>expanding and sharing</b> our knowledge, with frequent and efficient <b>feedback and retrospectives</b> - and still I enjoy writing code as hobbist, in the attempt to create something <b>meaningful</b> for me and others, or just having fun by doing it.</p>
                 </div>
               </div>
             </div>
@@ -581,24 +585,95 @@
                 </div>
 
                 <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
-                  <p>Acquired by Travelers [NYSE: TRV] in 2017 and based in London and Boston, SB is the <b>leading online business insurance brokerage</b> that specializes in protecting businesses providing the protection suited to their risks and priorities and have helped over 1M businesses across thousands of different trades among <b>UK and USA</b>.</p>
+                  <p>Acquired by Travelers [NYSE: TRV] in 2017 and based in London and Boston, Simply Business is the <b>leading online business insurance brokerage</b>: it protects over one million small businesses across thousands of trades in the <b>UK and the US</b>, matching each of them with the cover suited to its risks and priorities.</p>
+
+                  <p>I joined in 2019 as a Senior Software Engineer in the team that owns the company's <b>data streaming backbone</b> (Kafka, change data capture, domain events) and the back-office that handles <b>policy renewals and cancellations</b> for the UK and the US. Over the years I have taken projects <b>end to end</b>, from discovery and architecture decision records to production and aftercare, usually as the engineer who holds the thread while the team builds; argued for <b>unconventional technical choices</b> when they were the right ones and brought colleagues along with them; and looked after the things that let a team work well together: <b>documentation, observability, runbooks, pairing and facilitation</b>. Since late 2025 I have moved closer to the customer, rebuilding the <b>sales journey and checkout</b> in React and TypeScript.</p>
+
+                  <p><b>Highlights</b></p>
+
+                  <ul>
+                    <li>Led the <b>TokenEx payment migration</b> to the new React architecture: built the first version and the patterns, then onboarded engineers from two teams so that we could finish it together (2026).</li>
+                    <li>Designed <b>Record Verification</b> and led its build in TypeScript: the service that proves the company's data lake matches production data, delivered on time for a finance audit (2025).</li>
+                    <li>With my team, took the <b>Kafka Outbox</b> from a team solution to the company standard for CDC and domain events; my part was migrating some fifty event types with the teams that owned them and extending it from MongoDB to PostgreSQL (2022 - 2025).</li>
+                    <li>Coordinated the move of <b>Rating Logs</b> out of the monolith into the rating service, with OpenAPI and Pact contracts and a clean teardown of the old infrastructure (2024 - 2025).</li>
+                    <li>Helped keep the <b>renewals application</b> modern since 2019: Rails 5.2 to 8, LDAP to SAML/Okta, Bootstrap 3 to 5, the first UI overhaul in about twelve years (2019 - present).</li>
+                    <li>Helped move the bulk of the company's data, the <b>quotesets</b>, from MongoDB to S3 with no code changes for the callers (2020 - 2021).</li>
+                  </ul>
+
+                  <p><b>Projects</b></p>
 
                   <ul>
                     <li>
-                      <p>Designed and delivered a Change-Data-Capture solution for <b>gguaranteeing atomic, reliable, and consistent processing of real-time events between complex systems</b>, which ensured that only the most recent data that successfully committed to global and multi-region databases is delivered to consumer services.</p>
+                      <p><b>Sales journey frontend migration (late 2025 - present).</b> A strategic goal set by senior leadership: move the insurance sales journey from server-rendered Rails views to a <b>React 19 / TypeScript component architecture</b> built on the company's design system, one page at a time, behind feature flags and A/B experiments so that every step can be switched on, measured and rolled back independently.</p>
 
-                      <p>Some of the issues we intended to mitigate with our solution were dual writes; Kafka failing to deliver under load or network errors; different failure rates due to database and kafka being on different networks; difficulty to observe or guarantee SLIs (freshness, delay...) when hopping through the pipeline. Our solution included attaching a MongoDB-Kafka Source Connector to a replica instance from which reading the change stream and, after hopping through a transformer service to normalise the data, publishing to read-view topics for consumption by other systems.</p>
+                      <p>Each page has two halves and I work on both: the Rails page services, builders and typed contracts that feed the components, and the React components themselves, with their Storybook stories and tests. My pages were the <b>coverage selection, showcase and product recommendations</b> steps (trade imagery, coverage options, recommendation cards with estimated prices, an embedded insurance advisor widget) and the <b>purchase confirmation</b> pages for the UK and for US on-platform and off-platform purchases (policy details, account activation or sign-in, cross-sell, next steps, analytics datalayer), with Snowplow and GTM tracking aligned to the legacy pages so that funnel metrics stayed comparable throughout the migration.</p>
 
-                      <p>We also built a solution for AWS S3 publishing relying on its notification systems and the SQS stack.</p>
+                      <p><i>Ruby on Rails, React 19, TypeScript, Storybook, Amplitude experiments, Snowplow, GTM, RBS/Steep.</i></p>
                     </li>
 
-                    <li>Revamped the way we used to <b>organise information with the goal of making it easily accessible, structured, collaborative and pleasant to work with</b>. In this framework, I've got appreciation for setting up an archive for things describing past states and digital ephemera: documents, emails, walkthroughs, diagrams, notes, briefs, incidents... that proved useful for answering questions and promote what I would call <b>"librarian" culture.</b></li>
+                    <li>
+                      <p><b>Checkout and payments (2026).</b> The payment step was the riskiest part of the migration. I <b>led the TokenEx part</b> (TokenEx is the card tokenisation provider): I built the first version and the patterns the rest of the work would follow, drew the flow as sequence diagrams so that everyone could reason about it, then onboarded engineers from two teams and coordinated the work until we had an HMAC-authenticated drawer checkout and a single-action payment flow. We shipped the React <b>Combined Payment Page</b> as the default for every customer and removed the legacy pages and the experiment that guarded them.</p>
 
-                    <li>Conducted research and development to <b>build a platform that automated workflows</b> previously done by call center operators. The workflows involved large, complex, and slow spreadsheets. During the development process, we held fortnight demos to get feedback from a small sample of users and stakeholders. Few specifications remained set in stone and responding to their feedback thanks to quick iterations led us to bring promptly more happiness and efficiency among the teams.</li>
+                      <p>Along the way I hardened the <b>Stripe</b> integration (idempotency keys against duplicate intents on refresh, cart digests to reject stale carts, prepaid card blocking) and built the payment and product summaries, the UK direct debit schedules and credit agreements, insurer-specific payment plans and the Amplitude experiment that decides which implementation a customer sees. Most recently I have been the engineer responsible for <b>multi-product carts</b>, from scoping to execution: a customer can buy several policies in a single checkout, with the payment combinations precomputed server-side and the summary adapting to the cart, rolled out behind a flag and measured in production.</p>
 
-                    <li>The organization's data amount got close to the hard limit of what the current infrastructure could support. After analyzing the needs of different teams and stakeholders, we transitioned a large part of the data to a <b>completely different kind of storage solution, saving the company a dramatic amount of cash, making read and writes faster</b> and allowing us to keep everything running smoothly without any disruptions. We worked close to the ORM to ensure no code changes were needed even though part of the data was on different storage solution.</li>
+                      <p><i>Ruby on Rails, React, TypeScript, Stripe, TokenEx, Amplitude, RBS/Steep.</i></p>
+                    </li>
 
-                    <li>As part of my responsibilities, I have <b>interviewed engineers</b> applying to join the organization.</li>
+                    <li>
+                      <p><b>Record Verification (2025).</b> For audit purposes the company had to <b>prove that the data landing in its data lake matches production</b>. We built a <b>Node.js / TypeScript service</b>, which I designed and led, that tails the MongoDB change streams of several databases in a cluster, batches and normalises the records and publishes their hashes to S3; the data platform hashes the same records once they land in Snowflake, and any mismatch, whether a record with different contents or a record present on one side only, raises an alert and ends up in a monthly audit report.</p>
+
+                      <p>I led it from the pre-project discovery and the spikes to production and aftercare, and <b>proposed TypeScript</b> over Ruby or Kafka Connect: an unusual choice for the company that I had to make a case for, and that the team came to enjoy and contribute to. We kept the pace a finance audit deadline demanded by splitting the work, some of us building components and others integrating them, and it went live on time in April 2025 for both the main monolith and the renewals application. Afterwards I paired with the data team on the edge cases and took the aftercare so that my teammates could start the next project without context switching, cutting the false alerts from both monitored applications. Resume tokens, heartbeats, versioned per-collection configuration, exact handling of money and nested fields, a recovery mode, OpenTelemetry tracing, New Relic dashboards, alert runbooks for the data team and the architecture decision record came with it.</p>
+
+                      <p><i>Node.js, TypeScript, MongoDB change streams, AWS S3, Snowflake, OpenTelemetry, New Relic, Airbrake, GitHub Actions, Semaphore CI.</i></p>
+                    </li>
+
+                    <li>
+                      <p><b>Rating logs and upsells in the rating service (2024 - 2025).</b> Rating logs are the step-by-step audit trail of how a premium was calculated, used by pricing and partner-audit teams, and they lived in the monolith. I coordinated their extraction into the rating service: I ran the research and design conversations with the pricing, audit and rating teams, kept the story map and the cards current and made documentation part of refinement; on the code side I built S3 and later MongoDB persistence, a versioned <b>OpenAPI</b> client gem, <b>Pact</b> contracts, CDC writes in a transaction, the back-office integration, the teardown of the old infrastructure (Terraform) and a custom RuboCop cop to stop the old model from creeping back.</p>
+
+                      <p>Later we moved <b>upsells</b> into the rating service too: the add-on covers each insurer makes available are now computed at quote level in the rating pipeline and streamed through the schema registry and the CDC topics, so the journey no longer has to create and rate extra applications to price them. I instrumented the before and after on New Relic to demonstrate the impact. In the same period I contributed to the <b>temporary quotesets</b> capability, which lets the many flows that need a quote without intending to sell it (previews, comparisons, estimates) get one that is flagged, auto-deleted and kept out of events, CDC and rating logs, with a RuboCop guardrail so that nobody flags a real quote by mistake.</p>
+
+                      <p><i>Ruby, Rails engines and gems, MongoDB, AWS S3, OpenAPI, Pact, Terraform, Kafka.</i></p>
+                    </li>
+
+                    <li>
+                      <p><b>Kafka Outbox, the company-wide CDC and domain events platform (2022 - 2025).</b> Publishing to Kafka straight from the applications meant dual writes, messages lost under load or network errors, different failure rates for the database and for Kafka, and no way to observe or guarantee SLIs such as freshness and delay along the pipeline. We designed and delivered a <b>Change-Data-Capture solution based on the transactional outbox pattern</b>: applications write to an outbox in the same transaction as their data, a MongoDB Kafka source connector attached to a replica reads the change stream, a transformer service (Kotlin / Spring Boot) normalises the records and publishes them to read-view topics, and a sweeper confirms delivery and cleans up. Only data that successfully committed to the global and multi-region databases reaches consumers, with delivery guaranteed end to end. A sibling solution covered AWS S3 publishing through its notification system and SQS.</p>
+
+                      <p>From there the solution grew into the company standard, and my part was mostly the adoption: I coordinated and executed the Ruby and Mongoid upgrades that let every application in the organisation take it, migrated every domain event published by the main monolith (some fifty event types) and by the satellite services to the outbox with the teams that owned them, and decommissioned the legacy publishers; once Kafka Connect's single message transforms could do the normalisation, we retired the transformer and removed a hop from the pipeline. When another team adopted PostgreSQL I made the outbox library <b>ORM-agnostic</b> (MongoDB and PostgreSQL/ActiveRecord, Mongoid 8 and 9, Rails 7 and 8) with TTL retention, dead-letter recovery runbooks and a sweeper covering both stores, extended the Kafka source connector to PostgreSQL, added change-time headers and rebuilt its build/configure/deploy pipeline with circuit-breaker rollbacks. I also looked after the alerting (freshness SLOs on the transformer, dead-letter queue alerts as Terraform on New Relic), the dashboards, the team's 2025 <b>disaster recovery</b> review and the multi-region gamedays for the streaming stack, and wrote an organisation-wide RuboCop cop that forbids creating database indexes in the foreground.</p>
+
+                      <p><i>Ruby, Mongoid, ActiveRecord, Kafka, Kafka Connect, Kotlin/Spring Boot, schema registry, Terraform, New Relic, OpenTelemetry, AWS S3 and SQS.</i></p>
+                    </li>
+
+                    <li>
+                      <p><b>Continuous Cover, the UK and US renewals and cancellations application (2019 - present).</b> The application renews expiring policies automatically where it can and gives consultants a dashboard for the rest and for US cancellations; before it, those workflows ran on large, complex and slow spreadsheets. We built it through research and development with fortnightly demos to a small group of users and stakeholders: few specifications stayed set in stone, and quick iterations on their feedback brought more happiness and efficiency to the teams.</p>
+
+                      <p>With the team I built the US workflow: renewable and paused policies listings with filters, sorting, pagination and bulk actions, CSV import with preview and export, notices of cancellation, carrier mail merge, moratoria, insurer management and the event consumers that keep the state in sync with the policy system. I have also been the one who keeps it current: Rails 5.2 to 8.0, Ruby 2.7 to 3.3, an unofficial epic to reach Mongoid 9, Sprockets to Shakapacker 8 and the first <b>Bootstrap</b> upgrade in about twelve years (3 to 5), which I proposed, split across the team and tested with a group of the renewals consultants, whose early feedback shaped the new screens. I replaced LDAP with <b>SAML/Okta single sign-on</b> together with the business operations team, researched and proposed SCIM for real-time user provisioning and walked the team through the whole epic. Unified structured logging, the IT audit and disaster recovery work of 2022 (health checks fit for autoscaling, the Kafka failover process, contingency runbooks), an operational status report and the one-off scripts and runbooks the operations team relies on complete the picture.</p>
+
+                      <p><i>Ruby on Rails, MongoDB, Sidekiq, Kafka, Bootstrap 5, Shakapacker, SAML/Okta, RSpec, Cucumber, New Relic.</i></p>
+                    </li>
+
+                    <li>
+                      <p><b>Quoteset persistence on S3 (2020 - 2021).</b> The amount of data was approaching the hard limit of what the infrastructure could support. After analysing the needs of the different teams, we moved the bulk of it, the quotesets, to a <b>completely different kind of storage</b>: a Mongoid-compatible driver backed by S3, with caching and compressed serialisation, so that no caller needed a code change even though the data now lived elsewhere. It <b>saved the company a dramatic amount of money, made reads and writes faster</b> and went through without any disruption.</p>
+
+                      <p><i>Ruby, Mongoid, AWS S3, LocalStack.</i></p>
+                    </li>
+                  </ul>
+
+                  <p><b>Beyond the projects</b></p>
+
+                  <ul>
+                    <li>I revamped the way we <b>organise information</b> so that it is accessible, structured, collaborative and pleasant to work with, and I like to keep an archive of past states and digital ephemera (documents, emails, walkthroughs, diagrams, notes, briefs, incidents) that keeps answering questions years later: what I would call a <b>"librarian" culture</b>. In the same spirit I write and review <b>architecture decision records, major incident reviews and runbooks</b>, keep every service I touch documented on the internal developer portal and interconnect the documentation of the different projects (features, metrics, observability) so that engineers outside the team can find and use them.</li>
+
+                    <li>Day to day I <b>pair and explain a lot</b>, review pull requests quickly so that nobody waits on me, and take my turn on <b>incidents and alerts</b>. The feedback I value most is that colleagues learn something each time we pair.</li>
+
+                  <li>I <b>facilitate retrospectives, risk storming and similar sessions</b>, designing each one around the context and the goals the project has at that moment rather than running a fixed format. I use them to try new techniques and ask the team for feedback afterwards, so that the formats get better over time.</li>
+
+                    <li>I built the <b>GDPR right-to-be-forgotten</b> tooling for policies and, later, for rating logs, so that a customer's data can be erased across the whole policy chain on request.</li>
+
+                  <li>When ownership moves, I hand it over properly: I transferred several business-support processes to other teams with written guides and <b>code walkthroughs</b> of the UK automated renewals.</li>
+
+                  <li>I work with <b>AI coding agents</b> every day and maintain the team's agent skills and guides for the component architecture, so that generated code fits the codebase and its conventions.</li>
+
+                  <li>I <b>interview engineers</b> applying to join the organisation.</li>
                   </ul>
                 </div>
               </div>
